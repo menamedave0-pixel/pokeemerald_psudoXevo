@@ -170,6 +170,11 @@
                 "max_level": 3,
                 "species": "SPECIES_SEEDOT"
               }
+              {
+                "min_level": 5,
+                "max_level": 9,
+                "species": "SPECIES_KITS"
+              }
             ]
           },
           "water_mons": {
