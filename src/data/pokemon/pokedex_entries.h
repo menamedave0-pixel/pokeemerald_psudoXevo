@@ -4643,4 +4643,34 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 290,
         .trainerOffset = 2,
     },
+    [NATIONAL_DEX_KITS] =
+    {
+        .catergoryName =_("EMBER FOX"),
+        .height =6,
+        .weight =95,
+        .description = gKitsPokedexText,
+        .pokemonScale =256,
+        .trainerScale =290,
+        .trainerOffset = 2,
+    },
+    [NATIONAL_DEX_SUNE] =
+    {
+        .catergoryName = _("SUN FOX"),
+        .height = 11,
+        .weight =198,
+        .description = gSunePokedexText,
+        .pokemonScale = 256,
+        .trainerScale = 290,
+        .trainerOffset = 2,
+    },
+    [NATIONAL_DEX_SUNEKITS] =
+    {
+        .catergoryName = _("NOVA FOX"),
+        .height = 21,
+        .weight = 850,
+        .description = gSunekitsPokedexText,
+        .pokemonScale = 256,
+        .trainerScale = 290,
+        .trainerOffset = 2,
+    },
 };
