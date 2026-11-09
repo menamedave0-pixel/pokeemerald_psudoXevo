@@ -9,3 +9,4 @@ It builds the following ROM:
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
 For contacts and other pret projects, see [pret.github.io](https://pret.github.io/).
+This rom adds a bunch of stuff and tries to minimize fakemon
