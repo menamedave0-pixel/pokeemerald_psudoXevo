@@ -2319,3 +2319,16 @@ const u8 gDeoxysPokedexText[] = _(
     "extraterrestrial virus exposed to a laser\n"
     "beam. Its body is configured for superior\n"
     "agility and speed.");
+const u8 gKitsPokedexText[] = _(
+    "A rare, mysterious fox cub born from\n"
+    "the ember of a dying star. It spends\n"
+    "its days hiding in warm volcanic ash.");
+const u8 gSunePokedexText[] = _(
+    "As it gathers heat, its tails multiply.\n"
+    "It commands absolute control over small\n"
+    "flames and can manipulate illusions.");
+
+const u8 gSunekitsPokedexText[] = _(
+    "A legendary multi-tailed entity that\n"
+    "can eclipse the sun. Its ghostly fire\n"
+    "burns away any malicious spirits.");
