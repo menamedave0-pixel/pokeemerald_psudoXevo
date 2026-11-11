@@ -1,4 +1,4 @@
-name: CI
+name: Build ROM
 
 on:
   push:
@@ -13,18 +13,10 @@ jobs:
       GAME_REVISION: 0
       GAME_LANGUAGE: ENGLISH
       MODERN: 0
-      COMPARE: 1
+      COMPARE: 0
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Checkout syms
-        if: ${{ github.event_name == 'push' }}
-        uses: actions/checkout@v4
-        continue-on-error: true
-        with:
-          path: symbols
-          ref: symbols
 
       - name: Checkout agbcc
         uses: actions/checkout@v4
@@ -35,7 +27,7 @@ jobs:
       - name: Install binutils
         run: |
           sudo apt update
-          sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
+          sudo apt install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
 
       - name: Install agbcc
         run: |
@@ -43,27 +35,11 @@ jobs:
           ./install.sh ../
         working-directory: agbcc
 
-      - name: Compare
-        run: make -j$(nproc) all syms
-
-      - name: Modern
-        env:
-          MODERN: 1
-          COMPARE: 0
+      - name: Build ROM
         run: make -j$(nproc) all
 
-      - name: Move symfiles
-        if: ${{ github.event_name == 'push' }}
-        run: |
-          mkdir -p symbols
-          cp -v *.sym symbols/ || true
-          echo "SYMBOLS_COMMIT_MSG=$( git log --format=%s ${GITHUB_SHA} )" >> $GITHUB_ENV
-
-      - name: Update symfiles
-        if: ${{ github.event_name == 'push' }}
-        uses: EndBug/add-and-commit@v9
+      - name: Upload ROM
+        uses: actions/upload-artifact@v4
         with:
-          branch: symbols
-          cwd: "./symbols"
-          add: "*.sym"
-          message: ${{ env.SYMBOLS_COMMIT_MSG }}
+          name: pokeemerald-rom
+          path: pokeemerald.gba
