@@ -5615,7 +5615,7 @@ static const u16 sChimechoLevelUpLearnset[] = {
     LEVEL_UP_MOVE(46, MOVE_PSYCHIC),
     LEVEL_UP_END
 };
-static const LevelUpMove sKitsLevelUpLearnset[] = {
+static const u16 sKitsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 4, MOVE_EMBER),
@@ -5630,7 +5630,7 @@ static const LevelUpMove sKitsLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const LevelUpMove sSuneLevelUpLearnset[] = {
+static const u16 sSuneLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_SCRATCH),
     LEVEL_UP_MOVE( 1, MOVE_LEER),
     LEVEL_UP_MOVE( 1, MOVE_EMBER),
@@ -5648,7 +5648,7 @@ static const LevelUpMove sSuneLevelUpLearnset[] = {
     LEVEL_UP_END
 };
 
-static const LevelUpMove sSunekitsLevelUpLearnset[] = {
+static const u16 sSunekitsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 1, MOVE_NIGHT_SHADE),
     LEVEL_UP_MOVE( 1, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE( 1, MOVE_CONFUSE_RAY),
@@ -5656,11 +5656,11 @@ static const LevelUpMove sSunekitsLevelUpLearnset[] = {
     LEVEL_UP_MOVE( 5, MOVE_ROAR),
     LEVEL_UP_MOVE(12, MOVE_QUICK_ATTACK),
     LEVEL_UP_MOVE(17, MOVE_FLAME_WHEEL),
-    LEVEL_UP_MOVE(30, MOVE_HEX),
+    LEVEL_UP_MOVE(30, MOVE_SHADOW_PUNCH),
     LEVEL_UP_MOVE(35, MOVE_EXTREME_SPEED),
     LEVEL_UP_MOVE(41, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(48, MOVE_IMPRISON),
-    LEVEL_UP_MOVE(55, MOVE_SHADOW_BALL),   // Unlocked on evolution at level 55!
+    LEVEL_UP_MOVE(55, MOVE_SHADOW_BALL),
     LEVEL_UP_MOVE(62, MOVE_CALM_MIND),
     LEVEL_UP_MOVE(70, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(78, MOVE_OVERHEAT),
