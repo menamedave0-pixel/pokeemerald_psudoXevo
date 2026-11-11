@@ -5641,7 +5641,6 @@ static const LevelUpMove sSuneLevelUpLearnset[] = {
     LEVEL_UP_MOVE(20, MOVE_CONFUSE_RAY),
     LEVEL_UP_MOVE(25, MOVE_WILL_O_WISP),
     LEVEL_UP_MOVE(28, MOVE_FIRE_SPIN),
-    LEVEL_UP_MOVE(30, MOVE_HEX),           // New Ghost move unlocked on evolution!
     LEVEL_UP_MOVE(35, MOVE_EXTREME_SPEED),
     LEVEL_UP_MOVE(41, MOVE_FLAMETHROWER),
     LEVEL_UP_MOVE(48, MOVE_IMPRISON),
