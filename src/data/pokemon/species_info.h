@@ -11690,7 +11690,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .growthRate = GROWTH_SLOW,
         .eggGroups = {EGG_GROUP_FIELD, EGG_GROUP_FIELD},
         .abilities = {ABILITY_LEVITATE,ABILITY_BLAZE},
-        .safariZoneFleeRate = 0;
+        .safariZoneFleeRate = 0,
         .bodyColor = BODY_COLOR_RED,
         .noFlip = FALSE,
     },
@@ -11734,7 +11734,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         // Base Stat Total = Exactly 600!
         .types             = {TYPE_FIRE, TYPE_GHOST}, // Custom dual type split
         .catchRate         = 3, // Hard to catch pseudo standard
-        .expYield          = 270,
+        .expYield          = 200,
         .evYield_HP        = 0,
         .evYield_Attack    = 3,
         .evYield_Defense   = 0,
